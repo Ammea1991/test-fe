@@ -13,16 +13,14 @@ onMounted(() => {
 </script>
 
 <template>
-  <main>
-    <v-container>
-      <ProductCard
-        v-for="product in products"
-        :key="product.id"
-        :title="product.title"
-        :description="product.description"
-        :thumbnail="product.thumbnail"
-        :price="product.price"
-      />
-    </v-container>
-  </main>
+  <v-container>
+    <ProductCard
+      v-for="product in products"
+      :key="product.id"
+      :title="product.title"
+      :description="product.description"
+      :thumbnail="product.thumbnail"
+      :price="product.price"
+    />
+  </v-container>
 </template>
